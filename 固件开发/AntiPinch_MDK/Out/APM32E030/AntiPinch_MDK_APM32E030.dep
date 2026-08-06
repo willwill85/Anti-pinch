@@ -1,0 +1,234 @@
+Dependencies for Project 'AntiPinch_MDK', Target 'APM32E030': (DO NOT MODIFY !)
+F (Source\system_apm32e030.c)(0x6A6D75DB)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\system_apm32e030.o --omf_browse .\out\apm32e030\system_apm32e030.crf --depend .\out\apm32e030\system_apm32e030.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_fmc.h)(0x68240D97)
+F (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Source\arm\startup_apm32e030.s)(0x68240D97)(--cpu Cortex-M0+ -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 525" --pd "APM32E030X8 SETA 1"--list .\listings\apm32e030\startup_apm32e030.lst --xref -o .\out\apm32e030\startup_apm32e030.o --depend .\out\apm32e030\startup_apm32e030.d)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_eint.c)(0x68240D97)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_eint.o --omf_browse .\out\apm32e030\apm32e030_eint.crf --depend .\out\apm32e030\apm32e030_eint.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_eint.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_gpio.c)(0x68240D97)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_gpio.o --omf_browse .\out\apm32e030\apm32e030_gpio.crf --depend .\out\apm32e030\apm32e030_gpio.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_gpio.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_rcm.h)(0x68664C0E)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_rcm.c)(0x68664253)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_rcm.o --omf_browse .\out\apm32e030\apm32e030_rcm.crf --depend .\out\apm32e030\apm32e030_rcm.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_rcm.h)(0x68664C0E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_usart.c)(0x68240D97)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_usart.o --omf_browse .\out\apm32e030\apm32e030_usart.crf --depend .\out\apm32e030\apm32e030_usart.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_usart.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_rcm.h)(0x68664C0E)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_misc.c)(0x68240D97)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_misc.o --omf_browse .\out\apm32e030\apm32e030_misc.crf --depend .\out\apm32e030\apm32e030_misc.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_misc.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_adc.c)(0x68240D97)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_adc.o --omf_browse .\out\apm32e030\apm32e030_adc.crf --depend .\out\apm32e030\apm32e030_adc.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_adc.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_rcm.h)(0x68664C0E)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_tmr.c)(0x68240D97)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_tmr.o --omf_browse .\out\apm32e030\apm32e030_tmr.crf --depend .\out\apm32e030\apm32e030_tmr.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_tmr.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_rcm.h)(0x68664C0E)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_crc.c)(0x68240D97)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_crc.o --omf_browse .\out\apm32e030\apm32e030_crc.crf --depend .\out\apm32e030\apm32e030_crc.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_crc.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_dbg.c)(0x68240D97)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_dbg.o --omf_browse .\out\apm32e030\apm32e030_dbg.crf --depend .\out\apm32e030\apm32e030_dbg.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_dbg.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_dma.c)(0x68240D97)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_dma.o --omf_browse .\out\apm32e030\apm32e030_dma.crf --depend .\out\apm32e030\apm32e030_dma.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_dma.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_fmc.c)(0x68240D97)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_fmc.o --omf_browse .\out\apm32e030\apm32e030_fmc.crf --depend .\out\apm32e030\apm32e030_fmc.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_fmc.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_i2c.c)(0x68240D97)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_i2c.o --omf_browse .\out\apm32e030\apm32e030_i2c.crf --depend .\out\apm32e030\apm32e030_i2c.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_i2c.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_rcm.h)(0x68664C0E)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_iwdt.c)(0x68240D97)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_iwdt.o --omf_browse .\out\apm32e030\apm32e030_iwdt.crf --depend .\out\apm32e030\apm32e030_iwdt.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_iwdt.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_ob.c)(0x68240D97)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_ob.o --omf_browse .\out\apm32e030\apm32e030_ob.crf --depend .\out\apm32e030\apm32e030_ob.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_ob.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_pmu.c)(0x68240D97)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_pmu.o --omf_browse .\out\apm32e030\apm32e030_pmu.crf --depend .\out\apm32e030\apm32e030_pmu.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_pmu.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_rcm.h)(0x68664C0E)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_rtc.c)(0x68240D97)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_rtc.o --omf_browse .\out\apm32e030\apm32e030_rtc.crf --depend .\out\apm32e030\apm32e030_rtc.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_rtc.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_rcm.h)(0x68664C0E)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_spi.c)(0x68240D97)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_spi.o --omf_browse .\out\apm32e030\apm32e030_spi.crf --depend .\out\apm32e030\apm32e030_spi.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_spi.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_rcm.h)(0x68664C0E)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_syscfg.c)(0x682AFEBF)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_syscfg.o --omf_browse .\out\apm32e030\apm32e030_syscfg.crf --depend .\out\apm32e030\apm32e030_syscfg.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_syscfg.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+F (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_wwdt.c)(0x68240D97)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_wwdt.o --omf_browse .\out\apm32e030\apm32e030_wwdt.crf --depend .\out\apm32e030\apm32e030_wwdt.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_wwdt.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_rcm.h)(0x68664C0E)
+F (..\APM32E030_SDK_V1.0.3\Boards\Board.c)(0x68240D1C)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\board.o --omf_browse .\out\apm32e030\board.crf --depend .\out\apm32e030\board.d)
+I (..\APM32E030_SDK_V1.0.3\Boards\Board.h)(0x68240D1C)
+I (..\APM32E030_SDK_V1.0.3\Boards\Board_APM32E030_TINY/inc/Board_APM32E030_TINY.h)(0x68240D1C)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_gpio.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_usart.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_rcm.h)(0x68664C0E)
+I (..\APM32E030_SDK_V1.0.3\Boards\Board_APM32E030_TINY/src/Board_APM32E030_TINY.c)(0x68240D1C)
+I (F:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_eint.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_misc.h)(0x68240D97)
+F (Source\main.c)(0x6A6D86BA)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\main.o --omf_browse .\out\apm32e030\main.crf --depend .\out\apm32e030\main.d)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_adc.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_dma.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_gpio.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_misc.h)(0x68240D97)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_rcm.h)(0x68664C0E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_usart.h)(0x68240D97)
+I (F:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+F (Source\apm32e030_int.c)(0x6A6D7474)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc -I ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include -I ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include -I ..\APM32E030_SDK_V1.0.3\Boards -I Include-I.\RTE\_APM32E030-IF:\Keil_v5\ARM\PACK\Geehy\APM32E030_DFP\1.0.3\Device\Device\Geehy\APM32E030\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DAPM32E030X8 -DBOARD_APM32E030_TINY -DAPM32E030x8-o .\out\apm32e030\apm32e030_int.o --omf_browse .\out\apm32e030\apm32e030_int.crf --depend .\out\apm32e030\apm32e030_int.d)
+I (Include\apm32e030_int.h)(0x68240D62)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h)(0x6866426E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h)(0x67EB9646)
+I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h)(0x67EB9646)
+I (..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h)(0x68240D97)
+I (Include\main.h)(0x68240D62)
+F (README.md)(0x6A6D86BA)()

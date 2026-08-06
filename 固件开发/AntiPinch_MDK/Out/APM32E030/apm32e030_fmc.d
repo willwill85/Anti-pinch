@@ -1,0 +1,9 @@
+.\out\apm32e030\apm32e030_fmc.o: ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\src\apm32e030_fmc.c
+.\out\apm32e030\apm32e030_fmc.o: ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_fmc.h
+.\out\apm32e030\apm32e030_fmc.o: ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h
+.\out\apm32e030\apm32e030_fmc.o: ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h
+.\out\apm32e030\apm32e030_fmc.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\apm32e030\apm32e030_fmc.o: ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h
+.\out\apm32e030\apm32e030_fmc.o: ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h
+.\out\apm32e030\apm32e030_fmc.o: ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h
+.\out\apm32e030\apm32e030_fmc.o: ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h

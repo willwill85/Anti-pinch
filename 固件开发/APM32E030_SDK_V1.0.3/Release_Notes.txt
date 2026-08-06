@@ -1,0 +1,16 @@
+Release Notes for APM32E030 SDK
+
+Update History
+V1.0 / 31-07-2024
+First Release version of APM32E030 SDK.
+
+V1.0.1 / 25-03-2025
+Update FMC driver and clear interrupt flag annotation.
+
+V1.0.2 / 15-05-2025
+Update RTC, SYSCFG and EINT drivers.Remove RTC wakeup functionality.
+
+V1.0.3 / 03-07-2025
+Update RCM driver and I2C examples.
+
+

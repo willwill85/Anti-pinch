@@ -1,0 +1,8 @@
+device APM32E030K8T6
+si SWD
+speed 1000
+r
+loadfile Out\APM32E030\AntiPinch_MDK.hex
+r
+g
+exit

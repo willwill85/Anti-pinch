@@ -1,0 +1,15 @@
+.\out\apm32e030\main.o: Source\main.c
+.\out\apm32e030\main.o: ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h
+.\out\apm32e030\main.o: ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h
+.\out\apm32e030\main.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\apm32e030\main.o: ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h
+.\out\apm32e030\main.o: ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h
+.\out\apm32e030\main.o: ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h
+.\out\apm32e030\main.o: ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h
+.\out\apm32e030\main.o: ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_adc.h
+.\out\apm32e030\main.o: ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_dma.h
+.\out\apm32e030\main.o: ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_gpio.h
+.\out\apm32e030\main.o: ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_misc.h
+.\out\apm32e030\main.o: ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_rcm.h
+.\out\apm32e030\main.o: ..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc\apm32e030_usart.h
+.\out\apm32e030\main.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

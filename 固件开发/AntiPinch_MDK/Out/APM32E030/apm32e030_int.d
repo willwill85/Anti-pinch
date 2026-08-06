@@ -1,0 +1,10 @@
+.\out\apm32e030\apm32e030_int.o: Source\apm32e030_int.c
+.\out\apm32e030\apm32e030_int.o: Include\apm32e030_int.h
+.\out\apm32e030\apm32e030_int.o: ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\apm32e030.h
+.\out\apm32e030\apm32e030_int.o: ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\core_cm0plus.h
+.\out\apm32e030\apm32e030_int.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\apm32e030\apm32e030_int.o: ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_version.h
+.\out\apm32e030\apm32e030_int.o: ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_compiler.h
+.\out\apm32e030\apm32e030_int.o: ..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include\cmsis_armcc.h
+.\out\apm32e030\apm32e030_int.o: ..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include\system_apm32e030.h
+.\out\apm32e030\apm32e030_int.o: Include\main.h
