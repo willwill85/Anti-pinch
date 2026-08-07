@@ -337,7 +337,7 @@
               <MiscControls></MiscControls>
               <Define>BOARD_APM32E030_TINY,APM32E030x8</Define>
               <Undefine></Undefine>
-              <IncludePath>..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc;..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include;..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include;..\APM32E030_SDK_V1.0.3\Boards;Include</IncludePath>
+              <IncludePath>..\APM32E030_SDK_V1.0.3\Libraries\APM32E030_StdPeriphDriver\inc;..\APM32E030_SDK_V1.0.3\Libraries\CMSIS\Include;..\APM32E030_SDK_V1.0.3\Libraries\Device\Geehy\APM32E030\Include;..\APM32E030_SDK_V1.0.3\Boards;Include;RTT</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -512,9 +512,29 @@
               <FilePath>Source\main.c</FilePath>
             </File>
             <File>
+              <FileName>rs485_proto.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>Source\rs485_proto.c</FilePath>
+            </File>
+            <File>
               <FileName>apm32e030_int.c</FileName>
               <FileType>1</FileType>
               <FilePath>Source\apm32e030_int.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>RTT</GroupName>
+          <Files>
+            <File>
+              <FileName>SEGGER_RTT.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>RTT\SEGGER_RTT.c</FilePath>
+            </File>
+            <File>
+              <FileName>SEGGER_RTT_printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>RTT\SEGGER_RTT_printf.c</FilePath>
             </File>
           </Files>
         </Group>

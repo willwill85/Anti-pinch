@@ -1,0 +1,4 @@
+.DS_Store
+
+# GCC build output (the MDK build under Out/ is kept, this one is not)
+固件开发/AntiPinch_MDK/Build/
