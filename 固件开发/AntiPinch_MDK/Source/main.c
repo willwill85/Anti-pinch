@@ -18,6 +18,7 @@
 #define ADC_FULL_SCALE        4096U    /* 采样值统一用 4096 去减后再参与运算 */
 #define DIVIDER_KOHM             5U    /* 分压电阻 5k 上拉到 VCC，压力膜接地 */
 #define RTT_PERIOD_MS          100U    /* 每 100 ms 通过 RTT 打印一次各通道 */
+#define RS485_SIM_PERIOD_MS   1000U    /* 每 1 s 在 RTT 上模拟一次 485 回复 */
 
 /* 卡尔曼滤波参数，Q8 定点。Q/R 约 0.026，稳态增益约 0.15 */
 #define KALMAN_Q_Q8             27U    /* 过程噪声 */
@@ -89,6 +90,7 @@ static volatile uint8_t g_rxRing[RX_RING_SIZE];
 static volatile uint16_t g_rxHead;
 static volatile uint16_t g_rxTail;
 static uint8_t g_txFrameId; /* 主动上报用的帧 ID，每发一次加 1 */
+static uint8_t g_simFrameId; /* RTT 上模拟回复用的帧 ID，跟真实上报分开计数 */
 
 static Led_Mode_T g_ledMode;
 static uint32_t g_ledLast;
@@ -112,6 +114,7 @@ static void Led_Update(uint32_t now);
 static uint32_t Resistance_CentiKOhm(uint16_t inverted);
 static void Report_AdcRtt(void);
 static void Report_BaselineRtt(void);
+static void Report_Rs485SimRtt(void);
 static void Report_EventRtt(const char *tag, uint32_t channel, uint32_t rNow, uint32_t rBase);
 static void Rs485_Service(void);
 static void Rs485_HandleFrame(const Rs485_Frame_T *request);
@@ -648,6 +651,33 @@ static void Report_BaselineRtt(void)
     SEGGER_RTT_printf(0, " kR\r\n");
 }
 
+static void Report_Rs485SimRtt(void)
+{
+    Rs485_Frame_T frame;
+    uint8_t buffer[RS485_MAX_FRAME];
+    uint32_t length;
+    uint32_t i;
+
+    /* 按"主机查询 0x01 检测状态"构造一帧回复，用的是真实的组帧函数，
+     * 所以打出来的字节跟实际会上总线的完全一致。这里只打印，不发 485。 */
+    frame.status = RS485_STATUS_REPLY;
+    frame.frameId = g_simFrameId++;
+    frame.srcId = RS485_MODULE_ID;
+    frame.dstId = RS485_HOST_ID;
+    frame.dataLen = 2U;
+    frame.data[0] = RS485_CMD_DETECT_STATE;
+    frame.data[1] = (g_pinchMask != 0U) ? RS485_DETECT_ABNORMAL : RS485_DETECT_NORMAL;
+
+    length = Rs485_BuildFrame(buffer, sizeof(buffer), &frame);
+    SEGGER_RTT_printf(0, "[%6u ms] RS485 reply 0x01 ->", (unsigned)g_millis);
+    for (i = 0U; i < length; i++)
+    {
+        SEGGER_RTT_printf(0, " %02X", (unsigned)buffer[i]);
+    }
+    SEGGER_RTT_printf(0, "  (%s)\r\n",
+                      (g_pinchMask != 0U) ? "ABNORMAL" : "NORMAL");
+}
+
 static void Usart_PutChar(uint8_t ch)
 {
     /* 等发送寄存器空出来再写入下一个字节 */
@@ -785,6 +815,7 @@ int main(void)
     uint32_t lastAdcProcess = 0U;
     uint32_t lastRtt = 0U;
     uint32_t lastBaseline = 0U;
+    uint32_t lastRs485Sim = 0U;
 
     /* 系统使用内部 8 MHz 时钟，初始化 1 ms SysTick */
     SystemCoreClockUpdate();
@@ -844,6 +875,13 @@ int main(void)
         {
             lastRtt = now;
             Report_AdcRtt();
+        }
+
+        /* 每 1 s 在 RTT 上模拟打印一次 485 回复帧 */
+        if ((now - lastRs485Sim) >= RS485_SIM_PERIOD_MS)
+        {
+            lastRs485Sim = now;
+            Report_Rs485SimRtt();
         }
 
         Baseline_ServiceMedian(); /* 每轮最多重算一个通道的中位数 */
