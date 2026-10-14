@@ -1,4 +1,14 @@
-.DS_Store
+# 只跟踪 固件开发/ 与原理图 PDF，忽略其余本地图纸、PCB、外壳与协议文档
+/*
+!/.gitignore
+!/固件开发/
+!/AX1/
+/AX1/*
+!/AX1/防夹电路图AX1.pdf
 
-# GCC build output (the MDK build under Out/ is kept, this one is not)
+# GCC 命令行构建产物
 固件开发/AntiPinch_MDK/Build/
+
+# 本地调试脚本
+固件开发/AntiPinch_MDK/*.jlink
+!固件开发/AntiPinch_MDK/flash_jlink.jlink

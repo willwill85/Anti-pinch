@@ -13,14 +13,22 @@
 #define RS485_MODULE_ID           0x30U   /* 防夹模块自身 ID，协议第 5 节 */
 #define RS485_HOST_ID             0x01U   /* 主机 ID，协议未给出，暂定 0x01 */
 
-#define RS485_CMD_DETECT_STATE    0x01U   /* 查询检测状态 */
+#define RS485_CMD_DETECT_STATE    0x01U   /* 查询检测状态（回复 4 个位置的异常标志） */
+#define RS485_CMD_CALIBRATE       0x02U   /* 手动触发基准线参数校准 */
+#define RS485_CMD_THRESH_SET      0x04U   /* 设置触发阈值 0-4096 */
+#define RS485_CMD_THRESH_GET      0x05U   /* 读取触发阈值 0-4096 */
 #define RS485_CMD_FW_VERSION      0xF0U   /* 查询固件版本 */
 
 #define RS485_DETECT_NORMAL       0x00U   /* 异常检测：正常 */
 #define RS485_DETECT_ABNORMAL     0x01U   /* 异常检测：异常（检测到防夹） */
 
+#define RS485_CALIB_OK            0x00U   /* 校准结果：成功 */
+#define RS485_CALIB_FAIL          0x01U   /* 校准结果：失败 */
+
+#define RS485_POSITION_COUNT      4U      /* 防夹位置数量 */
+
 #define RS485_HEADER_SIZE         7U      /* SOF..DATA_LEN 共 7 字节 */
-#define RS485_MAX_DATA            8U      /* 本模块用到的最大数据域长度 */
+#define RS485_MAX_DATA            8U      /* 数据域上限，协议最长用到 5 字节 */
 #define RS485_MAX_FRAME           (RS485_HEADER_SIZE + 2U + RS485_MAX_DATA + 2U)
 
 typedef struct

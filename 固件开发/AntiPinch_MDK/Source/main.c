@@ -84,6 +84,8 @@ static uint16_t g_baseCount; /* 队列中有效样本数 */
 static uint16_t g_baseline[ADC_CHANNEL_COUNT]; /* 各通道 xn，过去 5 分钟中位数 */
 static uint16_t g_medianPending; /* 待重算中位数的通道位掩码 */
 static uint16_t g_pinchMask; /* 当前处于防夹状态的通道位掩码 */
+static uint16_t g_threshold = 0U; /* 触发阈值，ADC 码 0~4096，0x04 设置、0x05 读取 */
+static uint8_t g_calibResult;    /* 最近一次校准结果，1 成功 */
 static volatile uint32_t g_millis; /* SysTick 毫秒计数 */
 
 static volatile uint8_t g_rxRing[RX_RING_SIZE];
@@ -120,6 +122,7 @@ static void Rs485_Service(void);
 static void Rs485_HandleFrame(const Rs485_Frame_T *request);
 static void Rs485_SendFrame(const Rs485_Frame_T *frame);
 static void Rs485_ReportDetectState(void);
+static void Rs485_BuildDetectPayload(Rs485_Frame_T *frame);
 static void Usart_PutChar(uint8_t ch);
 static void DelayMs(uint32_t milliseconds);
 
@@ -499,6 +502,50 @@ static void Baseline_ServiceMedian(void)
     }
 }
 
+/* 0x02 手动校准：把当前滤波值直接当作基线，并清空历史队列重新攒 5 分钟。
+ * 返回 1 表示成功。基线为 0 的通道（还没有有效滤波值）视为失败。 */
+static uint8_t Baseline_Calibrate(void)
+{
+    uint32_t channel;
+
+    for (channel = 0U; channel < ADC_CHANNEL_COUNT; channel++)
+    {
+        if ((g_kalmanX[channel] >> 8) == 0U)
+        {
+            return 0U;
+        }
+    }
+    for (channel = 0U; channel < ADC_CHANNEL_COUNT; channel++)
+    {
+        g_baseline[channel] = (uint16_t)(g_kalmanX[channel] >> 8);
+    }
+    g_baseCount = 0U;
+    g_baseIndex = 0U;
+    return 1U;
+}
+
+/* 10 个通道按 1234 1234 12 循环分配到 4 个位置：通道 i 属于位置 (i % 4) + 1 */
+static uint8_t Position_Of(uint32_t channel)
+{
+    return (uint8_t)((channel % RS485_POSITION_COUNT) + 1U);
+}
+
+/* 位置 p（1~4）只要有一个通道异常就算异常 */
+static uint8_t Position_IsAbnormal(uint8_t position)
+{
+    uint32_t channel;
+
+    for (channel = 0U; channel < ADC_CHANNEL_COUNT; channel++)
+    {
+        if ((Position_Of(channel) == position) &&
+            ((g_pinchMask & (uint16_t)(1U << channel)) != 0U))
+        {
+            return 1U;
+        }
+    }
+    return 0U;
+}
+
 static void Pinch_Evaluate(void)
 {
     uint32_t channel;
@@ -664,9 +711,7 @@ static void Report_Rs485SimRtt(void)
     frame.frameId = g_simFrameId++;
     frame.srcId = RS485_MODULE_ID;
     frame.dstId = RS485_HOST_ID;
-    frame.dataLen = 2U;
-    frame.data[0] = RS485_CMD_DETECT_STATE;
-    frame.data[1] = (g_pinchMask != 0U) ? RS485_DETECT_ABNORMAL : RS485_DETECT_NORMAL;
+    Rs485_BuildDetectPayload(&frame);
 
     length = Rs485_BuildFrame(buffer, sizeof(buffer), &frame);
     SEGGER_RTT_printf(0, "[%6u ms] RS485 reply 0x01 ->", (unsigned)g_millis);
@@ -712,6 +757,20 @@ static void Rs485_SendFrame(const Rs485_Frame_T *frame)
     GPIO_WriteBitValue(RS485_DE_PORT, RS485_DE_PIN, Bit_RESET);
 }
 
+/* 0x01 回复：[0x01, 位置1, 位置2, 位置3, 位置4]，每个位置 0 正常 / 1 异常 */
+static void Rs485_BuildDetectPayload(Rs485_Frame_T *frame)
+{
+    uint8_t position;
+
+    frame->dataLen = (uint16_t)(1U + RS485_POSITION_COUNT);
+    frame->data[0] = RS485_CMD_DETECT_STATE;
+    for (position = 1U; position <= RS485_POSITION_COUNT; position++)
+    {
+        frame->data[position] = Position_IsAbnormal(position) ? RS485_DETECT_ABNORMAL
+                                                              : RS485_DETECT_NORMAL;
+    }
+}
+
 static void Rs485_ReportDetectState(void)
 {
     Rs485_Frame_T frame;
@@ -721,9 +780,7 @@ static void Rs485_ReportDetectState(void)
     frame.frameId = g_txFrameId++;
     frame.srcId = RS485_MODULE_ID;
     frame.dstId = RS485_HOST_ID;
-    frame.dataLen = 2U;
-    frame.data[0] = RS485_CMD_DETECT_STATE;
-    frame.data[1] = (g_pinchMask != 0U) ? RS485_DETECT_ABNORMAL : RS485_DETECT_NORMAL;
+    Rs485_BuildDetectPayload(&frame);
     Rs485_SendFrame(&frame);
 }
 
@@ -747,10 +804,39 @@ static void Rs485_HandleFrame(const Rs485_Frame_T *request)
     switch (request->data[0])
     {
         case RS485_CMD_DETECT_STATE:
+            Rs485_BuildDetectPayload(&reply);
+            break;
+
+        case RS485_CMD_CALIBRATE:
+            /* 校准只是把当前滤波值拷进基线，几微秒，直接在这里做完再回结果 */
+            g_calibResult = Baseline_Calibrate();
             reply.dataLen = 2U;
-            reply.data[0] = RS485_CMD_DETECT_STATE;
-            reply.data[1] = (g_pinchMask != 0U) ? RS485_DETECT_ABNORMAL
-                                                : RS485_DETECT_NORMAL;
+            reply.data[0] = RS485_CMD_CALIBRATE;
+            reply.data[1] = (g_calibResult != 0U) ? RS485_CALIB_OK : RS485_CALIB_FAIL;
+            break;
+
+        case RS485_CMD_THRESH_SET:
+            if (request->dataLen < 3U)
+            {
+                return;
+            }
+            /* 阈值小端 2 字节，超出 0~4096 的按 4096 截断 */
+            g_threshold = (uint16_t)(request->data[1] | ((uint16_t)request->data[2] << 8));
+            if (g_threshold > ADC_FULL_SCALE)
+            {
+                g_threshold = (uint16_t)ADC_FULL_SCALE;
+            }
+            reply.dataLen = 3U;
+            reply.data[0] = RS485_CMD_THRESH_SET;
+            reply.data[1] = (uint8_t)(g_threshold & 0xFFU);   /* 回显 */
+            reply.data[2] = (uint8_t)(g_threshold >> 8);
+            break;
+
+        case RS485_CMD_THRESH_GET:
+            reply.dataLen = 3U;
+            reply.data[0] = RS485_CMD_THRESH_GET;
+            reply.data[1] = (uint8_t)(g_threshold & 0xFFU);
+            reply.data[2] = (uint8_t)(g_threshold >> 8);
             break;
 
         case RS485_CMD_FW_VERSION:
